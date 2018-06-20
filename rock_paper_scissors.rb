@@ -110,5 +110,3 @@ end
 puts "-------------"
 
 prompt("Thank you for playing. Goodbye!")
-
-promp("Just playing around with github.")
