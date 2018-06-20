@@ -80,7 +80,8 @@ loop do
 
     computer_choice = VALID_CHOICES.sample
 
-    puts "You chose #{display_choice_user(user_choice)}. And computer chose #{display_choice_comp(computer_choice)}."
+    puts "You chose #{display_choice_user(user_choice)}."
+    puts "And computer chose #{display_choice_comp(computer_choice)}."
 
     display_results(user_choice, computer_choice)
 
@@ -95,7 +96,6 @@ loop do
     elsif computer_score >= 5
       break
     end
-
   end
   if user_score == 5
     puts "You won 5 times. You are the grand winner!"
@@ -106,9 +106,9 @@ loop do
   puts "Would you like to play again? (y/n)"
   response = gets.chomp
   break unless response.downcase.start_with?('y')
-
 end
-
 puts "-------------"
 
 prompt("Thank you for playing. Goodbye!")
+
+promp("Just playing around with github.")
